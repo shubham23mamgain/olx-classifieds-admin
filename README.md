@@ -11,9 +11,17 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in dev.
 
-Backend must be running on `http://localhost:4000` (or set `NEXT_PUBLIC_API_URL`).
+`.env.local` defaults to the live API:
+
+```
+NEXT_PUBLIC_API_URL=https://api.classifieds.shubhkarmatech.com
+NEXT_PUBLIC_ADMIN_URL=https://admin.classifieds.shubhkarmatech.com
+```
+
+Production (`npm run start`) listens on **3035** for nginx (`admin.classifieds.shubhkarmatech.com`).  
+For a local API, set `NEXT_PUBLIC_API_URL=http://localhost:4000`.
 
 ## Default admin
 

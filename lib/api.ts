@@ -1,7 +1,12 @@
-const API_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(
-  /\/$/,
-  ""
-);
+const API_URL = (
+  process.env.NEXT_PUBLIC_API_URL ||
+  "https://api.classifieds.shubhkarmatech.com"
+).replace(/\/$/, "");
+
+export const ADMIN_URL = (
+  process.env.NEXT_PUBLIC_ADMIN_URL ||
+  "https://admin.classifieds.shubhkarmatech.com"
+).replace(/\/$/, "");
 
 export type AdminUser = {
   id?: string;
